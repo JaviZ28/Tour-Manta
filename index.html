@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tour en barco por Manta y San Mateo con Javier Zamora - Explora la fauna local de la costa ecuatoriana">
+    <title>Tour Manta | Javier Zamora - Explorando Fauna Local en Barco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo">
+                <span class="logo-icon">🌊</span>
+                <div class="logo-text">
+                    <h2>Tour Manta</h2>
+                    <span>Ecuador</span>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#organizador" class="nav-link">Organizador</a></li>
+                <li><a href="#tour" class="nav-link">El Tour</a></li>
+                <li><a href="#fauna" class="nav-link">Fauna</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link btn-reserva">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="hero-badge">🌟 Experiencia Única en el Mar</span>
+            <h1 class="hero-title">
+                Explora la Fauna <br>
+                <span class="gradient-text">Local de Manta</span>
+            </h1>
+            <p class="hero-subtitle">
+                Navega las cristalinas aguas de San Mateo y descubre la increíble biodiversidad de la costa ecuatoriana en un tour inolvidable
+            </p>
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <span class="feature-icon">⚓</span>
+                    <span>Barco Especializado</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-icon">🐬</span>
+                    <span>Fauna Local</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-icon">👨‍🏫</span>
+                    <span>Guía Certificado</span>
+                </div>
+                <div class="hero-feature">
+                    <span class="feature-icon">📸</span>
+                    <span>Fotos Incluidas</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary btn-lg">
+                    <span>Reserva Ahora</span>
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#tour" class="btn btn-outline btn-lg">Saber Más</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <strong class="stat-number" data-count="500">+</strong>
+                    <span class="stat-label">Clientes Satisfechos</span>
+                </div>
+                <div class="stat">
+                    <strong class="stat-number" data-count="50">+</strong>
+                    <span class="stat-label">Especies Observadas</span>
+                </div>
+                <div class="stat">
+                    <strong class="stat-number" data-count="5">⭐</strong>
+                    <span class="stat-label">Calificación</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Organizador Section -->
+    <section id="organizador" class="section organizador-section">
+        <div class="container">
+            <div class="organizador-wrapper">
+                <div class="organizador-content">
+                    <span class="section-badge">👨‍🏫 Tu Guía Experto</span>
+                    <h2 class="section-title">Conoce a <span class="gradient-text">Javier Zamora</span></h2>
+                    <div class="organizador-card">
+                        <div class="organizador-avatar">
+                            <div class="avatar-placeholder">
+                                <span class="avatar-icon">👨‍✈️</span>
+                            </div>
+                            <div class="verified-badge">✓ Certificado</div>
+                        </div>
+                        <div class="organizador-info">
+                            <h3>Javier Zamora</h3>
+                            <p class="organizador-role">Organizador & Guía Principal</p>
+                            <div class="organizador-stats">
+                                <div class="organizador-stat">
+                                    <strong>10+</strong>
+                                    <span>Años de Experiencia</span>
+                                </div>
+                                <div class="organizador-stat">
+                                    <strong>1000+</strong>
+                                    <span>Tours Realizados</span>
+                                </div>
+                                <div class="organizador-stat">
+                                    <strong>4.9/5</strong>
+                                    <span>Calificación</span>
+                                </div>
+                            </div>
+                            <div class="organizador-bio">
+                                <p>Apasionado por la fauna marina y la conservación del ecosistema costero ecuatoriano. Con más de una década de experiencia guiando tours en Manta y San Mateo, Javier te llevará a conocer las maravillas naturales de nuestra costa con seguridad y conocimiento.</p>
+                            </div>
+                            <div class="organizador-credentials">
+                                <div class="credential">
+                                    <span class="credential-icon">🎓</span>
+                                    <span>Guía Turístico Certificado</span>
+                                </div>
+                                <div class="credential">
+                                    <span class="credential-icon">🚤</span>
+                                    <span>Capitán de Barco</span>
+                                </div>
+                                <div class="credential">
+                                    <span class="credential-icon">🌿</span>
+                                    <span>Experto en Fauna Local</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizador-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+593 99 XXX XXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>javier.zamora@tourmanta.ec</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Manta, Pichincha, Ecuador</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="organizador-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">
+                            <span class="placeholder-icon">🌊</span>
+                            <p>Tour en Barco - San Mateo</p>
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <span class="floating-icon">🐬</span>
+                        <span>Delfines</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="floating-icon">🐢</span>
+                        <span>Tortugas</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <span class="floating-icon">⭐</span>
+                        <span>5 Estrellas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Details -->
+    <section id="tour" class="section tour-section">
+        <div class="container">
+            <span class="section-badge">📍 Detalles del Tour</span>
+            <h2 class="section-title">¿Qué <span class="gradient-text">Incluye</span> Tu Experiencia?</h2>
+            <p class="section-description">Una experiencia completa diseñada para que disfrutes al máximo la naturaleza de Manta</p>
+            
+            <div class="tour-grid">
+                <div class="tour-card highlight">
+                    <div class="card-badge">Más Popular</div>
+                    <div class="tour-icon">🚤</div>
+                    <h3>Barco Especializado</h3>
+                    <p>Barco de última generación con capacidad para 20 personas, equipamiento de seguridad completo y cómodos asientos</p>
+                    <ul class="feature-list">
+                        <li>✓ Capacidad: 2-20 personas</li>
+                        <li>✓ Equipo de seguridad incluido</li>
+                        <li>✓ Sistema de sonido</li>
+                        <li>✓ Baño a bordo</li>
+                    </ul>
+                </div>
+                
+                <div class="tour-card">
+                    <div class="tour-icon">⏰</div>
+                    <h3>Duración & Horario</h3>
+                    <p>Tour de 4 horas lleno de aventuras y descubrimientos por las aguas de San Mateo</p>
+                    <ul class="feature-list">
+                        <li>✓ Duración: 4 horas</li>
+                        <li>✓ Salida: 7:00 AM</li>
+                        <li>✓ Retorno: 11:00 AM</li>
+                        <li>✓ Fines de semana</li>
+                    </ul>
+                </div>
+                
+                <div class="tour-card">
+                    <div class="tour-icon">🍽️</div>
+                    <h3>Alimentación</h3>
+                    <p>Disfruta de deliciosos refrigerios y bebidas mientras navegas por el mar ecuatoriano</p>
+                    <ul class="feature-list">
+                        <li>✓ Refrigerio local</li>
+                        <li>✓ Bebidas included</li>
+                        <li>✓ Agua embotellada</li>
+                        <li>✓ Opción vegetariana</li>
+                    </ul>
+                </div>
+                
+                <div class="tour-card">
+                    <div class="tour-icon">📸</div>
+                    <h3>Fotografía</h3>
+                    <p>Memorias inolvidables de tu experiencia con la fauna marina de Manta</p>
+                    <ul class="feature-list">
+                        <li>✓ Fotos profesionales</li>
+                        <li>✓ Acceso a galería digital</li>
+                        <li>✓ Puntos fotogénicos</li>
+                        <li>✓ Asesoría para fotos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tour-pricing">
+                <h3>Precios Transparentes</h3>
+                <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-type">Adultos</div>
+                        <div class="price-value">$45</div>
+                        <div class="price-currency">USD</div>
+                        <ul class="price-features">
+                            <li>✓ Acceso completo al tour</li>
+                            <li>✓ Equipo de seguridad</li>
+                            <li>✓ Refrigerio incluido</li>
+                        </ul>
+                    </div>
+                    <div class="price-card">
+                        <div class="price-type">Niños</div>
+                        <div class="price-value">$25</div>
+                        <div class="price-currency">USD</div>
+                        <ul class="price-features">
+                            <li>✓ Acceso completo al tour</li>
+                            <li>✓ Equipo de seguridad</li>
+                            <li>✓ Refrigerio incluido</li>
+                        </ul>
+                    </div>
+                    <div class="price-card featured">
+                        <div class="price-badge">Grupo</div>
+                        <div class="price-type">Grupo (10+)</div>
+                        <div class="price-value">$38</div>
+                        <div class="price-currency">USD</div>
+                        <ul class="price-features">
+                            <li>✓ 15% de descuento</li>
+                            <li>✓ Equipo de seguridad</li>
+                            <li>✓ Refrigerio premium</li>
+                            <li>✓ Foto grupal profesional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fauna Section -->
+    <section id="fauna" class="section fauna-section">
+        <div class="container">
+            <span class="section-badge">🐋 Biodiversidad Marina</span>
+            <h2 class="section-title">Fauna Local que <span class="gradient-text">Verrás</span></h2>
+            <p class="section-description">Las aguas de Manta albergan una de las biodiversidades más ricas del Pacífico ecuatoriano</p>
+            
+            <div class="fauna-gallery">
+                <div class="fauna-card large">
+                    <div class="fauna-badge">Más Común</div>
+                    <div class="fauna-image">
+                        <span class="fauna-emoji">🐬</span>
+                    </div>
+                    <div class="fauna-info">
+                        <h3>Delfines Nariz de Botella</h3>
+                        <p>Observa a estos inteligentes mamíferos marinos jugando en las olas. Se les ve con frecuencia en las aguas de San Mateo, especialmente en las primeras horas de la mañana.</p>
+                        <div class="fauna-details">
+                            <span class="detail">
+                                <span class="detail-icon">📊</span>
+                                <span>90% probabilidad</span>
+                            </span>
+                            <span class="detail">
+                                <span class="detail-icon">🕐</span>
+                                <span>Mañana</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fauna-card">
+                    <div class="fauna-image">
+                        <span class="fauna-emoji">🐢</span>
+                    </div>
+                    <div class="fauna-info">
+                        <h3>Tortugas Marinas</h3>
+                        <p>Especies de tortugas verdes y carey que habitan nuestras aguas</p>
+                        <div class="fauna-details">
+                            <span class="detail">
+                                <span class="detail-icon">📊</span>
+                                <span>75% probabilidad</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fauna-card">
+                    <div class="fauna-image">
+                        <span class="fauna-emoji">🐠</span>
+                    </div>
+                    <div class="fauna-info">
+                        <h3>Peces Tropicales</h3>
+                        <p>Más de 50 especies de peces coloridos en su hábitat natural</p>
+                        <div class="fauna-details">
+                            <span class="detail">
+                                <span class="detail-icon">📊</span>
+                                <span>95% probabilidad</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fauna-card">
+                    <div class="fauna-image">
+                        <span class="fauna-emoji">🦅</span>
+                    </div>
+                    <div class="fauna-info">
+                        <h3>Pájaros Marinos</h3>
+                        <p>Frigatas, pelicanos, piqueros y otras aves costeras</p>
+                        <div class="fauna-details">
+                            <span class="detail">
+                                <span class="detail-icon">📊</span>
+                                <span>85% probabilidad</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fauna-card">
+                    <div class="fauna-image">
+                        <span class="fauna-emoji">🐋</span>
+                    </div>
+                    <div class="fauna-info">
+                        <h3>Ballenas Jorobadas</h3>
+                        <p>Temporada: Junio - Octubre. Espectacular avistamiento</p>
+                        <div class="fauna-details">
+                            <span class="detail">
+                                <span class="detail-icon">📊</span>
+                                <span>60% (temporada)</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fauna-info-box">
+                <div class="info-box-icon">ℹ️</div>
+                <div class="info-box-content">
+                    <h4>¿Sabías que...?</h4>
+                    <p>Las aguas de Manta son uno de los mejores lugares en Ecuador para observar fauna marina debido a la confluencia de corrientes cálidas y frías que atraen una diversidad increíble de especies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section testimonios-section">
+        <div class="container">
+            <span class="section-badge">💬 Lo Que Dicen Nuestros Clientes</span>
+            <h2 class="section-title">Testimonios <span class="gradient-text">Reales</span></h2>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <span>MC</span>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>María Castillo</h4>
+                            <div class="testimonio-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"Experiencia increíble! Javier es un guía excelente, muy conocedor de la fauna local. Vimos delfines a los 20 minutos de salir. ¡100% recomendado!"</p>
+                    <div class="testimonio-meta">
+                        <span class="testimonio-date">Tour: Mayo 2026</span>
+                    </div>
+                </div>
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <span>JR</span>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <div class="testimonio-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"Lo mejor de nuestro viaje a Manta. El barco es muy cómodo y seguro. Vimos tortugas, delfines y muchos peces. Javier nos tomó fotos geniales."</p>
+                    <div class="testimonio-meta">
+                        <span class="testimonio-date">Tour: Abril 2026</span>
+                    </div>
+                </div>
+                
+                <div class="testimonio-card">
+                    <div class="testimonio-header">
+                        <div class="testimonio-avatar">
+                            <span>LG</span>
+                        </div>
+                        <div class="testimonio-info">
+                            <h4>Lucía Gómez</h4>
+                            <div class="testimonio-rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p class="testimonio-text">"Llevé a mis hijos y les encantó. Javier es muy paciente y educativo. Mi hija mayor quiere ser bióloga marina ahora. ¡Gracias Javier!"</p>
+                    <div class="testimonio-meta">
+                        <span class="testimonio-date">Tour: Marzo 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contacto-section">
+        <div class="container">
+            <span class="section-badge">📝 Reserva Tu Lugar</span>
+            <h2 class="section-title">Contáctanos <span class="gradient-text">Ahora</span></h2>
+            <p class="section-description">Completa el formulario y Javier se pondrá en contacto contigo en menos de 24 horas</p>
+            
+            <div class="contacto-wrapper">
+                <div class="contacto-info">
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3>Teléfono / WhatsApp</h3>
+                            <p>+593 99 XXX XXXX</p>
+                            <span class="info-sub">Respuesta en 2 horas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>javier.zamora@tourmanta.ec</p>
+                            <span class="info-sub">Respuesta en 24 horas</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>Ubicación</h3>
+                            <p>Manta, Pichincha, Ecuador</p>
+                            <span class="info-sub">Punto de encuentro: Puerto de Manta</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contacto-features">
+                        <h4>¿Por qué reservar con nosotros?</h4>
+                        <ul>
+                            <li>✓ Guía certificado con 10+ años de experiencia</li>
+                            <li>✓ Barco moderno con equipamiento de seguridad</li>
+                            <li>✓ Grupos pequeños para mejor experiencia</li>
+                            <li>✓ Cancelación gratuita hasta 48h antes</li>
+                            <li>✓ Mejor precio garantizado</li>
+                            <li>✓ Experiencia educativa para toda la familia</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <form id="contactForm" class="contacto-form">
+                    <h3>Formulario de Reserva</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+593 99 XXX XXXX" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="people">Número de Personas *</label>
+                            <input type="number" id="people" name="people" min="1" max="20" placeholder="2" required>
+                            <span class="error-message" id="peopleError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Fecha Preferida *</label>
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-message" id="dateError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="type">Tipo de Tour</label>
+                            <select id="type" name="type">
+                                <option value="standard">Tour Standard (4h)</option>
+                                <option value="private">Tour Privado</option>
+                                <option value="group">Tour de Grupo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje o Preguntas (Opcional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="¿Tienes alguna pregunta o requisito especial?"></textarea>
+                    </div>
+                    
+                    <div class="form-terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Acepto los términos y condiciones y la política de privacidad *</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">
+                        <span>Enviar Reserva</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    
+                    <div class="form-note">
+                        <span>🔒</span>
+                        <span>Tus datos están seguros. No compartimos tu información con terceros.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">🌊</span>
+                        <div class="logo-text">
+                            <h2>Tour Manta</h2>
+                            <span>Ecuador</span>
+                        </div>
+                    </div>
+                    <p>Explorando la fauna local de Manta desde 2016. Experiencias inolvidables con Javier Zamora.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#organizador">Javier Zamora</a></li>
+                        <li><a href="#tour">El Tour</a></li>
+                        <li><a href="#fauna">Fauna</a></li>
+                        <li><a href="#contacto">Reservar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>📞 +593 99 XXX XXXX</p>
+                    <p>📧 javier.zamora@tourmanta.ec</p>
+                    <p>📍 Manta, Pichincha, Ecuador</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tour por Manta - Javier Zamora. Todos los derechos reservados.</p>
+                <div class="footer-credits">
+                    <span>Práctica académica - Docker, GitHub & Google Cloud Run</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
