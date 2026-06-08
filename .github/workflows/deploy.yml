@@ -1,0 +1,40 @@
+name: Deploy to Azure Container Apps
+
+on:
+push:
+branches:
+- main
+
+jobs:
+deploy:
+runs-on: ubuntu-latest
+
+```
+steps:
+  - name: Checkout code
+    uses: actions/checkout@v4
+
+  - name: Azure Login
+    uses: azure/login@v2
+    with:
+      creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+  - name: Login to Azure Container Registry
+    run: az acr login --name landingmanta
+
+  - name: Build Docker image
+    run: |
+      docker build -t landingmanta.azurecr.io/landing-tour:${{ github.sha }} .
+
+  - name: Push Docker image
+    run: |
+      docker push landingmanta.azurecr.io/landing-tour:${{ github.sha }}
+
+  - name: Update Azure Container App
+    run: |
+      az extension add --name containerapp --upgrade
+      az containerapp update \
+        --name landingmanta-env \
+        --resource-group LandingMantaRG \
+        --image landingmanta.azurecr.io/landing-tour:${{ github.sha }}
+```
