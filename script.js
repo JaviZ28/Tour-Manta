@@ -62,37 +62,41 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     
     // Si no hay errores
     if (!hasError) {
-        const formData = {
-            name,
-            email,
-            phone,
-            people: parseInt(people),
-            date,
-            message,
-            type: document.getElementById('type').value
-        };
 
-        fetch("https://lns7itq7jg.execute-api.us-east-2.amazonaws.com/reserva", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Reserva guardada:", data);
+    const formData = {
+        name,
+        email,
+        phone,
+        people: parseInt(people),
+        date,
+        message,
+        type: document.getElementById('type').value
+    };
 
-            showSuccessMessage(formData);
+    const API_URL = "https://lns7itq7jg.execute-api.us-east-2.amazonaws.com";
 
-            document.getElementById("contactForm").reset();
-        })
-        .catch(error => {
-            console.error("Error:", error);
+    fetch(`${API_URL}/reserva`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Reserva guardada:", data);
 
-            alert("No se pudo guardar la reserva");
-        });
-    }
+        showSuccessMessage(formData);
+
+        document.getElementById('contactForm').reset();
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Error al enviar la reserva");
+    });
+
+}
+
 });
 
 function showError(elementId, message) {
@@ -321,3 +325,4 @@ console.log('✅ Animaciones al scroll activas');
 window.addEventListener('load', function() {
     checkAnimation();
 });
+
