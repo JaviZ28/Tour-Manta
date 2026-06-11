@@ -66,17 +66,32 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
             name,
             email,
             phone,
-            people,
+            people: parseInt(people),
             date,
             message,
             type: document.getElementById('type').value
         };
-        
-        // Mostrar mensaje de éxito
-        showSuccessMessage(formData);
-        
-        // Limpiar formulario
-        this.reset();
+
+        fetch("http://18.223.162.54:8000/reservas", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Reserva guardada:", data);
+
+            showSuccessMessage(formData);
+
+            document.getElementById("contactForm").reset();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+
+            alert("No se pudo guardar la reserva");
+        });
     }
 });
 
