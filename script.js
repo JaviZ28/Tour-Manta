@@ -72,7 +72,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
             type: document.getElementById('type').value
         };
 
-        fetch("http://18.223.162.54:8000/reservas", {
+        fetch("https://lns7itq7jg.execute-api.us-east-2.amazonaws.com/reserva", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
